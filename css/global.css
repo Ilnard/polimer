@@ -23,6 +23,7 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    border: none;
 }
 .btn__accent {
     color: white;
@@ -62,6 +63,9 @@ a {
     left: 50%;
     top: calc(100% + 5px);
     transform: translateX(-50%);
+}
+main {
+    padding-top: 110px;
 }
 section {
     margin-bottom: 100px;
