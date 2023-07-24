@@ -1,0 +1,12 @@
+.partners__header {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--dark);
+    margin-bottom: 50px;
+}
+.partners-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 530px);
+    justify-content: center;
+    justify-items: center;
+    gap: 50px;
+}
