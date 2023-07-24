@@ -1,16 +1,8 @@
-.first-section {
-    padding-top: 100px;
-}
 .cards-header {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 30px;
-}
-.cards__title {
-    font-size: 30px;
-    font-weight: 900;
-    color: var(--dark);
 }
 .cards__dropdown-icon {
     transform: rotate(180deg);

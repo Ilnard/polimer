@@ -70,6 +70,12 @@ main {
 section {
     margin-bottom: 100px;
 }
+.first-section {
+    padding-top: 100px;
+}
+.section__header {
+    margin-bottom: 30px;
+}
 .section__suptitle {
     color: var(--accent);
     font-size: 15px;
@@ -83,10 +89,10 @@ section {
     font-size: 30px;
     line-height: 15px;
     font-weight: 900;
-    margin-bottom: 50px;
 }
 .media {
     position: relative;
+    overflow: hidden;
 }
 .media__picture {
     width: 100%;
@@ -95,6 +101,9 @@ section {
 }
 .media__picture_contain {
     object-fit: contain;
+}
+.media__picture_cover {
+    object-fit: cover;
 }
 .footer {
     background: url('../images/footer-bg.svg') top / cover no-repeat;
