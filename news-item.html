@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/global.css">
-    <title>БПП продукция</title>
+    <link rel="stylesheet" href="css/news-item.css">
+    <title>Новость 1</title>
 </head>
 
 <body>
@@ -15,277 +17,94 @@
                 <img src="images/logo.png" alt="Башполимерпласт" class="logo">
                 <nav class="header__nav">
                     <a href="/" class="header__link">Главная</a>
-                    <a href="products.html" class="header__link header__link_active">Продукция</a>
+                    <a href="products.html" class="header__link">Продукция</a>
                     <a href="about.html" class="header__link">Компания</a>
                     <a href="partners.html" class="header__link">Представители</a>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="modal-feedback__wrapper">
-        <form class="modal-feedback__form">
-            <svg class="modal-feedback__close-icon" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="21" cy="21" r="20" stroke="#143195" stroke-width="2" />
-                <path d="M10.8348 10.5955L31.4369 31.5097" stroke="#143195" stroke-width="3" stroke-linecap="round" />
-                <path d="M31.0815 10.5583L9.81958 31.5029" stroke="#143195" stroke-width="3" stroke-linecap="round" />
-            </svg>
-            <h2 class="modal-feedback__title">Заполните форму</h2>
-            <div class="modal-feedback-fields">
-                <div class="modal-feedback-field">
-                    <label for="name" class="modal-feedback-field__name">Имя<span class="c-red">*</span></label>
-                    <input type="text" class="modal-feedback-field__input" id="name" placeholder="Алексей">
-                </div>
-                <div class="modal-feedback-field">
-                    <label for="email" class="modal-feedback-field__name">E-mail<span class="c-red">*</span></label>
-                    <input type="email" class="modal-feedback-field__input" id="email" placeholder="alexey2023@yandex.ru">
-                </div>
-                <div class="modal-feedback-field">
-                    <label for="phone" class="modal-feedback-field__name">Номер телефона<span class="c-red">*</span></label>
-                    <input type="tel" class="modal-feedback-field__input" id="phone" placeholder="+7 (987) 123-45-67">
-                </div>
-            </div>
-            <input type="submit" class="btn btn__accent modal-feedback__btn" value="Отправить заявку">
-            <div class="modal-feedback__tip">Вы можете отказаться в любой момент<span class="c-red">*</span></div>
-        </form>
-    </div>
     <main>
-        <section class="first-section cards drinking-pipes" id="drinking-pipes">
+        <section class="first-section news-item">
             <div class="container">
-                <div class="cards__inner">
-                    <header class="cards-header">
-                        <h2 class="section__title">Трубы&nbsp;ПВХ&nbsp;питьевые</h2>
-                        <svg class="cards__dropdown-icon" width="27" height="27" viewBox="0 0 27 27" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="13.907" cy="13.8213" r="13.093" />
-                            <path d="M8.99951 13.8215L13.9996 19.7188L18.9997 13.8215" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 7.92383V19.7183" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="cards-header__line"></div>
+                <div class="news-item__inner">
+                    <header class="news-item__header">
+                        <h2 class="news-item__title">Новость 1 (Заголовок)</h2>
+                        <a href="#" class="news-item__backlink">Все новости</a>
                     </header>
-                    <div class="cards-block" style="transition: max-height .3s linear;">
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn modal-open-btn">Купить</button>
+                    <article class="news-item__article">
+                        <p class="news-item__parag">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea
+                            commodo
+                            con Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla
+                            pariatu
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim
+                            id es Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, to Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                            sed
+                            quia consequuntur ma Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed qu Ut enim ad minima veniam, quis nostrum exercitationem
+                            ullam
+                            corporis suscipit laboriosam, nisi ut al Quis autem vel eum iure reprehenderit qui in ea
+                            voluptate velit esse quam nihil molestiae consequatu
+                        </p>
+                    </article>
+                    <div class="swiper-container">
+                        <div class="swiper news-item-gallery">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide media">
+                                    <img src="images/news/news_1/092_original.webp" alt=""
+                                        class="media__picture media__picture_cover">
+                                </div>
+                                <div class="swiper-slide media">
+                                    <img src="images/news/news_1/092_original.webp" alt=""
+                                        class="media__picture media__picture_cover">
+                                </div>
+                                <div class="swiper-slide media">
+                                    <img src="images/news/news_1/092_original.webp" alt=""
+                                        class="media__picture media__picture_cover">
+                                </div>
+                                <div class="swiper-slide media">
+                                    <img src="images/news/news_1/092_original.webp" alt=""
+                                        class="media__picture media__picture_cover">
+                                </div>
                             </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
+
                         </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn modal-open-btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn modal-open-btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn modal-open-btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="cards sewer-pipes" id="sewer-pipes">
-            <div class="container">
-                <div class="cards__inner">
-                    <header class="cards-header">
-                        <h2 class="section__title">Трубы&nbsp;ПВХ&nbsp;канализационные</h2>
-                        <svg class="cards__dropdown-icon" width="27" height="27" viewBox="0 0 27 27" fill="none"
+                        <svg class="swiper-prev" width="46" height="45" viewBox="0 0 46 45" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="13.907" cy="13.8213" r="13.093" />
-                            <path d="M8.99951 13.8215L13.9996 19.7188L18.9997 13.8215" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 7.92383V19.7183" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                            <circle cx="23.1804" cy="22.291" r="21.2146" stroke="url(#paint0_linear_670_3)"
+                                stroke-width="2" />
+                            <path
+                                d="M31.2662 23.791C32.0947 23.791 32.7662 23.1194 32.7662 22.291C32.7662 21.4626 32.0947 20.791 31.2662 20.791L31.2662 23.791ZM14.0339 21.2304C13.4481 21.8161 13.4481 22.7659 14.0339 23.3517L23.5798 32.8976C24.1656 33.4834 25.1154 33.4834 25.7012 32.8976C26.2869 32.3118 26.2869 31.3621 25.7012 30.7763L17.2159 22.291L25.7012 13.8057C26.2869 13.2199 26.2869 12.2702 25.7012 11.6844C25.1154 11.0986 24.1656 11.0986 23.5798 11.6844L14.0339 21.2304ZM31.2662 20.791L15.0946 20.791L15.0946 23.791L31.2662 23.791L31.2662 20.791Z"
+                                fill="#143195" />
+                            <defs>
+                                <linearGradient id="paint0_linear_670_3" x1="2.81959" y1="23.154" x2="43.3984"
+                                    y2="22.5536" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#143195" />
+                                    <stop offset="1" stop-color="#009646" />
+                                </linearGradient>
+                            </defs>
                         </svg>
-                        <div class="cards-header__line"></div>
-                    </header>
-                    <div class="cards-block" style="transition: max-height .3s linear;">
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="cards hoses" id="hoses">
-            <div class="container">
-                <div class="cards__inner">
-                    <header class="cards-header">
-                        <h2 class="section__title">Шланг&nbsp;ПВХ</h2>
-                        <svg class="cards__dropdown-icon" width="27" height="27" viewBox="0 0 27 27" fill="none"
+                        <svg class="swiper-next" width="45" height="45" viewBox="0 0 45 45" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="13.907" cy="13.8213" r="13.093" />
-                            <path d="M8.99951 13.8215L13.9996 19.7188L18.9997 13.8215" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 7.92383V19.7183" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                            <circle cx="22.7512" cy="22.291" r="21.2146" transform="rotate(-180 22.7512 22.291)"
+                                stroke="url(#paint0_linear_506_1689)" stroke-width="2" />
+                            <path
+                                d="M14.6653 20.791C13.8369 20.791 13.1653 21.4626 13.1653 22.291C13.1653 23.1194 13.8369 23.791 14.6653 23.791L14.6653 20.791ZM31.8976 23.3517C32.4834 22.7659 32.4834 21.8161 31.8976 21.2304L22.3517 11.6844C21.7659 11.0986 20.8161 11.0986 20.2304 11.6844C19.6446 12.2702 19.6446 13.2199 20.2304 13.8057L28.7156 22.291L20.2304 30.7763C19.6446 31.3621 19.6446 32.3118 20.2304 32.8976C20.8161 33.4834 21.7659 33.4834 22.3517 32.8976L31.8976 23.3517ZM14.6653 23.791L30.837 23.791L30.837 20.791L14.6653 20.791L14.6653 23.791Z"
+                                fill="#143195" />
+                            <defs>
+                                <linearGradient id="paint0_linear_506_1689" x1="2.39039" y1="23.154" x2="42.9692"
+                                    y2="22.5536" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#143195" />
+                                    <stop offset="1" stop-color="#009646" />
+                                </linearGradient>
+                            </defs>
                         </svg>
-                        <div class="cards-header__line"></div>
-                    </header>
-                    <div class="cards-block" style="transition: max-height .3s linear;">
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <div class="media card__media">
-                                <img src="images/products/tube-nPVH-90.jpg" alt="abc"
-                                    class="media__picture card__picture">
-                                <button class="btn btn__accent card__btn">Купить</button>
-                            </div>
-                            <div class="card__title">Труба нПВХ обсадная Ø 90</div>
-                            <div class="card__line"></div>
-                            <ul class="card__properties">
-                                <li class="card__property">Толщина стенки: 4/5/8 мм</li>
-                                <li class="card__property">Внутренний диаметр: 80,4/80 мм</li>
-                                <li class="card__property">Диаметр раструба: 95/97 мм</li>
-                                <li class="card__property">Рекомендуемая глубина: 80/180 м</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -392,8 +211,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/products.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/news-item.js"></script>
 </body>
 
 </html>
