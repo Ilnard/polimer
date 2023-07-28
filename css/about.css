@@ -58,6 +58,9 @@
 .certificates-swiper {
     height: 250px;
 }
+.certificates-swiper-slide {
+    cursor: pointer;
+}
 .company-data__table {
     display: grid;
     grid-template-columns: auto auto;

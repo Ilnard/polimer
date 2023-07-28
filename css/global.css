@@ -322,3 +322,30 @@ section {
     font-size: 15px;
     text-align: center;
 }
+.modal-certificate__wrapper {
+    display: none;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+}
+.modal-certificate__wrapper_active {
+    display: flex;
+}
+.modal-certificate {
+    height: 100%;
+    position: relative;
+}
+.modal-certificate__close-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%,-50%);
+}
+.modal-certificate__certificate {
+    height: 100%;
+}
